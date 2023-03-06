@@ -1,0 +1,27 @@
+---
+apiVersion: getambassador.io/v2
+kind:  Mapping
+metadata:
+  name:  demo-app-mapping
+spec:
+  prefix: /demo/
+  service: demo-app-service-stable
+  resolver: endpoint
+---
+apiVersion: getambassador.io/v2
+kind:  Mapping
+metadata:
+  name:  demo-app-mapping-stable
+spec:
+  prefix: /stable/
+  service: demo-app-service-stable
+  resolver: endpoint
+---
+apiVersion: getambassador.io/v2
+kind:  Mapping
+metadata:
+  name:  demo-app-mapping-unstable
+spec:
+  prefix: /unstable/
+  service: demo-app-service-canary
+  resolver: endpoint
