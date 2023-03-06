@@ -1,0 +1,7 @@
+apiVersion: getambassador.io/v2
+kind: Host
+metadata:
+  name: edge-stack-host
+  namespace: edge-stack
+spec:
+  hostname: lab.local
