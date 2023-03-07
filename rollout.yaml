@@ -14,7 +14,7 @@ spec:
   strategy:
     canary:
       stableService: demo-app-service-stable
-      canaryService: demo-app-service-canary
+      canaryService: demo-app-service-canary-test
       trafficRouting:
         ambassador:
           mappings:
