@@ -13,12 +13,12 @@ spec:
     name: demo-app-deployment
   strategy:
     canary:
-#       stableService: demo-app-service-stable
-#       canaryService: demo-app-service-canary
-#       trafficRouting:
-#         ambassador:
-#           mappings:
-#             - demo-app-mapping
+      stableService: demo-app-service-stable
+      canaryService: demo-app-service-canary
+      trafficRouting:
+        ambassador:
+          mappings:
+            - demo-app-mapping
       steps:
       - setWeight: 30
       - pause: {duration: 30s}
