@@ -6,8 +6,8 @@ metadata:
 spec:
   prefix: /demo/
   service: demo-app-service-stable
-  resolver: endpoint
-#   host: lab.local
+#   resolver: endpoint
+  host: lab.local
 ---
 apiVersion: getambassador.io/v2
 kind:  Mapping
@@ -16,8 +16,8 @@ metadata:
 spec:
   prefix: /stable/
   service: demo-app-service-stable
-  resolver: endpoint
-#   host: lab.local
+#   resolver: endpoint
+  host: lab.local
 ---
 apiVersion: getambassador.io/v2
 kind:  Mapping
@@ -26,5 +26,5 @@ metadata:
 spec:
   prefix: /unstable/
   service: demo-app-service-canary
-  resolver: endpoint
-#   host: lab.local
+#   resolver: endpoint
+  host: lab.local
